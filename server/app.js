@@ -128,7 +128,7 @@ MongoClient.connect(url,function(err,conn){
     var db = conn.db("delta");
     db.collection('applications').insertOne({
      serialno:req.body.serialno,
-    //  serialno:100,
+
      details:req.body
  },(err,data)=>{
      res.send(data)
